@@ -1,0 +1,176 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte mais leve e moderna */
+    background-color: #f1f1f1; /* Cor de fundo neutra e suave */
+    color: #333; /* Cor de texto mais escura para melhor contraste */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o conteúdo ocupe 100% da altura da tela */
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #f1f1f1, #f0e4d7); /* Gradiente suave */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo da navegação */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Fundo branco para leveza */
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+nav a {
+    color: #333;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4a261; /* Cor vibrante ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação sutil */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 3em 2em;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo levemente translúcido */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    position: relative;
+    margin-top: 120px; /* Compensa a navegação fixa */
+    transition: box-shadow 0.3s ease; /* Transição de sombra */
+}
+
+main:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estilo do contêiner do vídeo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    padding: 0 20px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efeito de zoom suave ao passar o mouse */
+}
+
+.video-container iframe:hover {
+    transform: scale(1.03); /* Zoom suave no vídeo */
+}
+
+/* Título */
+h1 {
+    color: #5b3a29;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    color: #f4a261;
+    transform: translateY(-2px); /* Efeito sutil de elevação */
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4f4a47;
+    margin-bottom: 2em;
+    text-align: justify;
+    text-indent: 2em;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Imagem */
+.imagem-container {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.imagem-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra leve na imagem */
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagem-container img:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+/* Estilo para responsividade em dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Botão para interação */
+button {
+    background-color: #f4a261;
+    color: #fff;
+    padding: 1em 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 2em;
+}
+
+button:hover {
+    background-color: #e76f51;
+    transform: translateY(-2px); 
+}
